@@ -5,20 +5,20 @@
 class Ruche < Formula
   desc "Shared agent memory across AI coding agents and machines"
   homepage "https://github.com/FacileStudio/Ruche"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/FacileStudio/Ruche/releases/download/v0.1.0/Ruche_0.1.0_darwin_amd64.tar.gz"
-      sha256 "f936fc16c7c2b701b13ad3a41e1b8b5f165945ac9e0cdc2191b470cea0e194df"
+      url "https://github.com/FacileStudio/Ruche/releases/download/v0.2.0/Ruche_0.2.0_darwin_amd64.tar.gz"
+      sha256 "feaabf5c5e97501a7baa890635a9773ecce16c25bacec215452973dcb56d63d1"
 
       define_method(:install) do
         bin.install "ruche"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/FacileStudio/Ruche/releases/download/v0.1.0/Ruche_0.1.0_darwin_arm64.tar.gz"
-      sha256 "d589b4764c946b416652d1c8e2da06651f74975ec1df2ca0eed433ac2dc95760"
+      url "https://github.com/FacileStudio/Ruche/releases/download/v0.2.0/Ruche_0.2.0_darwin_arm64.tar.gz"
+      sha256 "07504d04e9289db51147b5c06334032c97564d7573a8e230dd7bc2bd1e785870"
 
       define_method(:install) do
         bin.install "ruche"
@@ -28,15 +28,15 @@ class Ruche < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/FacileStudio/Ruche/releases/download/v0.1.0/Ruche_0.1.0_linux_amd64.tar.gz"
-      sha256 "b8350bab6d5ad01fb3f604b23e3f54227befb3007bfeff301decba0f86299761"
+      url "https://github.com/FacileStudio/Ruche/releases/download/v0.2.0/Ruche_0.2.0_linux_amd64.tar.gz"
+      sha256 "0b4e7d494bdc3d00a99d6f6319a2a2195efd8a6df28fedd03e8f5f141452b75d"
       define_method(:install) do
         bin.install "ruche"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/FacileStudio/Ruche/releases/download/v0.1.0/Ruche_0.1.0_linux_arm64.tar.gz"
-      sha256 "08f8a88e21ad2ebc26ca7d0fe62ad0a38ec1186f16318e609464a20142893420"
+      url "https://github.com/FacileStudio/Ruche/releases/download/v0.2.0/Ruche_0.2.0_linux_arm64.tar.gz"
+      sha256 "8c6f653349951744d5ad00b06a56e5290a1f76845a6f06bd597606c6e122a35a"
       define_method(:install) do
         bin.install "ruche"
       end
