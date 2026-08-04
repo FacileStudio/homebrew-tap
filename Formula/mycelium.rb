@@ -5,20 +5,20 @@
 class Mycelium < Formula
   desc "Shared agent memory across AI coding agents and machines"
   homepage "https://github.com/FacileStudio/Mycelium"
-  version "0.6.0"
+  version "0.6.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/FacileStudio/Mycelium/releases/download/v0.6.0/Mycelium_0.6.0_darwin_amd64.tar.gz"
-      sha256 "25635859e84770005cb5cd2cf2ed05bd95a30ccc851ee1a128cb756bea0850da"
+      url "https://github.com/FacileStudio/Mycelium/releases/download/v0.6.1/Mycelium_0.6.1_darwin_amd64.tar.gz"
+      sha256 "6c215e7bf85abcba08096629394dab35c773f9a5955931d45b4605136ea47e66"
 
       define_method(:install) do
         bin.install "mycelium"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/FacileStudio/Mycelium/releases/download/v0.6.0/Mycelium_0.6.0_darwin_arm64.tar.gz"
-      sha256 "748034b460a17715ac402c3e55d2683fc518fbbe7a7e39925033fe9790aaf8b6"
+      url "https://github.com/FacileStudio/Mycelium/releases/download/v0.6.1/Mycelium_0.6.1_darwin_arm64.tar.gz"
+      sha256 "76e2037e4fc5847c53289b59816937f6a63fc867f6d0797e31035643faed732a"
 
       define_method(:install) do
         bin.install "mycelium"
@@ -28,15 +28,15 @@ class Mycelium < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/FacileStudio/Mycelium/releases/download/v0.6.0/Mycelium_0.6.0_linux_amd64.tar.gz"
-      sha256 "03afba1b35dfc317a703440e85e953fdc394ab7df8c21856dddb94fe1bff35ad"
+      url "https://github.com/FacileStudio/Mycelium/releases/download/v0.6.1/Mycelium_0.6.1_linux_amd64.tar.gz"
+      sha256 "b7225e84fa6205049fbdcc18468cc9f6a682b991a424cdb6604b1a3ef76d88be"
       define_method(:install) do
         bin.install "mycelium"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/FacileStudio/Mycelium/releases/download/v0.6.0/Mycelium_0.6.0_linux_arm64.tar.gz"
-      sha256 "b54d9a490c06c1d46542b82314e8130665be540f338a1d40f65eb5e04385e618"
+      url "https://github.com/FacileStudio/Mycelium/releases/download/v0.6.1/Mycelium_0.6.1_linux_arm64.tar.gz"
+      sha256 "a437ed6cbbe7647b09b9798150b8386b0150addb7dd73151e9bda3e5942c7af4"
       define_method(:install) do
         bin.install "mycelium"
       end
