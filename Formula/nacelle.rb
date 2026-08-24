@@ -5,20 +5,20 @@
 class Nacelle < Formula
   desc "Terminal coding agent — the human harness for the nacelle SDK"
   homepage "https://github.com/FacileStudio/nacelle-tui"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/FacileStudio/nacelle-tui/releases/download/v0.1.0/nacelle-tui_0.1.0_darwin_amd64.tar.gz"
-      sha256 "b3ed5e079c62f9a0e80b349a5b30b5cfa3e29b317892e871055d2b7c17fa9f4a"
+      url "https://github.com/FacileStudio/nacelle-tui/releases/download/v0.2.0/nacelle-tui_0.2.0_darwin_amd64.tar.gz"
+      sha256 "638d0262033d54d678c9403bd3acbd1a0c3f4f6f1579cef8acdc6eab4f5b37ba"
 
       define_method(:install) do
         bin.install "nacelle"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/FacileStudio/nacelle-tui/releases/download/v0.1.0/nacelle-tui_0.1.0_darwin_arm64.tar.gz"
-      sha256 "65fffff666b8363869f86242ec3dcce342a154ffdfccbb18040493ec87b042e5"
+      url "https://github.com/FacileStudio/nacelle-tui/releases/download/v0.2.0/nacelle-tui_0.2.0_darwin_arm64.tar.gz"
+      sha256 "812c22c7b7a74bc91035783b2fc358ade161aaaf0b19582ecc97d91690ce78b9"
 
       define_method(:install) do
         bin.install "nacelle"
@@ -28,15 +28,15 @@ class Nacelle < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/FacileStudio/nacelle-tui/releases/download/v0.1.0/nacelle-tui_0.1.0_linux_amd64.tar.gz"
-      sha256 "5a09f57334750ebe6d4b2abec4bc54a3681cc3fe7bdfc5376fb019c6ee1bdbc8"
+      url "https://github.com/FacileStudio/nacelle-tui/releases/download/v0.2.0/nacelle-tui_0.2.0_linux_amd64.tar.gz"
+      sha256 "5e9241f5240802e934f123c6811ec3500b336054db5ef91a5defcbc66a06da88"
       define_method(:install) do
         bin.install "nacelle"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/FacileStudio/nacelle-tui/releases/download/v0.1.0/nacelle-tui_0.1.0_linux_arm64.tar.gz"
-      sha256 "bb438bd2e8979bc19954661c206d5b3796e5e8f4d52cb26239d8ba0e0efc8910"
+      url "https://github.com/FacileStudio/nacelle-tui/releases/download/v0.2.0/nacelle-tui_0.2.0_linux_arm64.tar.gz"
+      sha256 "f9f6333dd3d32c42f6b65df8eccfecb54595a1614edaf22e214fb7899803f600"
       define_method(:install) do
         bin.install "nacelle"
       end
