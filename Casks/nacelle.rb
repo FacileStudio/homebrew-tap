@@ -4,21 +4,21 @@ cask "nacelle" do
 
   on_macos do
     on_arm do
-      sha256 "93d432a7bc958a1a035f1eb7da9eb29ee30ecf6e2afc68fdb8c538403ccda801"
+      sha256 "e0679e491d6c9e11b8deb669abb7c78e5c254c4dccbfd8d3a220b2ba9851e5c8"
       url "https://github.com/FacileStudio/nacelle-tui/releases/download/v#{version}/nacelle-tui_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "3403c1eb6d0c73881dcd08738e3e4cb1e992cf1a5fdd5f6e6642e7031dd2a319"
+      sha256 "f277a45dfa138598a9be1f566b77f6409da4bbc21981d85b0661c3b8242fc820"
       url "https://github.com/FacileStudio/nacelle-tui/releases/download/v#{version}/nacelle-tui_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "d408979158d54c63a4e9d6761b864770f5fdc3495f84e31ecc1f63f0f62fc077"
+      sha256 "4a870045db5fa64b8f33dfee0d57247f7434028823c77310e0d6cd3754ff2ea2"
       url "https://github.com/FacileStudio/nacelle-tui/releases/download/v#{version}/nacelle-tui_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "daa3b6ef3b814e30921e11f6b130fae600d30afa430718155a7a0ef646618f02"
+      sha256 "f326ab46333d61ee3f6636bf1d502e5c4b76e81937bdcef32f74502f2a5e6b14"
       url "https://github.com/FacileStudio/nacelle-tui/releases/download/v#{version}/nacelle-tui_#{version}_linux_amd64.tar.gz"
     end
   end
