@@ -1,25 +1,25 @@
 class Nuage < Formula
   desc "Sync daemon and terminal client for Nuage, the self-hosted cloud storage"
   homepage "https://github.com/FacileStudio/nuage-cli"
-  version "0.10.1"
+  version "0.10.2"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/FacileStudio/nuage-cli/releases/download/v0.10.1/nuage_0.10.1_darwin_arm64.tar.gz"
-      sha256 "3de7fc6f53016929fb008ef355c2aa3a673b0af5f2f68c79d995c2eb03984b5d"
+      url "https://github.com/FacileStudio/nuage-cli/releases/download/v0.10.2/nuage_0.10.2_darwin_arm64.tar.gz"
+      sha256 "9c8275012b64cb5d20b36fe33700a77106cdb1ac322b92a9737c86f9a7aac520"
     else
-      url "https://github.com/FacileStudio/nuage-cli/releases/download/v0.10.1/nuage_0.10.1_darwin_amd64.tar.gz"
-      sha256 "150d76115060c7156fa6e430fc97023aad8692be085ee28377e5f828ddb94239"
+      url "https://github.com/FacileStudio/nuage-cli/releases/download/v0.10.2/nuage_0.10.2_darwin_amd64.tar.gz"
+      sha256 "12cb8ed8da03e283b2caaeecf5f3e1005fd6e1dd0e32d2d9ff2049e2776d254d"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/FacileStudio/nuage-cli/releases/download/v0.10.1/nuage_0.10.1_linux_amd64.tar.gz"
-      sha256 "08254007669331828df0de6aec2454f82f7581bded7a1fb9969b26174f37a056"
+      url "https://github.com/FacileStudio/nuage-cli/releases/download/v0.10.2/nuage_0.10.2_linux_amd64.tar.gz"
+      sha256 "916aa280a31c9cc4fb19598ae888780902c9415b290736a0c145817f42ecfe4e"
     else
-      url "https://github.com/FacileStudio/nuage-cli/releases/download/v0.10.1/nuage_0.10.1_linux_arm64.tar.gz"
-      sha256 "ce8974cd224c649bd3d919b38f42485331f75c86c73517cfac9b15c643c110d0"
+      url "https://github.com/FacileStudio/nuage-cli/releases/download/v0.10.2/nuage_0.10.2_linux_arm64.tar.gz"
+      sha256 "e5cb97b5295f23e07fecbe547c09f87d518beba976b940d3e56407398c604a21"
     end
   end
 
