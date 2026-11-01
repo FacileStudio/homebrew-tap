@@ -5,27 +5,27 @@ cask "bulle" do
   on_macos do
     on_arm do
       sha256 "149e79d48b95f2706c0d63da907571141a97d8ffdd98841ed094cae84acb1569"
-      url "https://github.com/FacileStudio/bulle/releases/download/v#{version}/bulle_#{version}_darwin_arm64.tar.gz"
+      url "https://github.com/FacileStudio/Bulle/releases/download/v#{version}/bulle_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
       sha256 "7bd0da0712698b76f519975a46bec6b8557d5dec39070aa1b4f80b01af284d75"
-      url "https://github.com/FacileStudio/bulle/releases/download/v#{version}/bulle_#{version}_darwin_amd64.tar.gz"
+      url "https://github.com/FacileStudio/Bulle/releases/download/v#{version}/bulle_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
       sha256 "dc230472a7712ca9a42c4d2e76f74089acead5cfb2072b01adf518a5fd1ade24"
-      url "https://github.com/FacileStudio/bulle/releases/download/v#{version}/bulle_#{version}_linux_arm64.tar.gz"
+      url "https://github.com/FacileStudio/Bulle/releases/download/v#{version}/bulle_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
       sha256 "315be3757c1948118987664e5fbffe4af1305a3abb5c51f841d14d6e3ebfee2f"
-      url "https://github.com/FacileStudio/bulle/releases/download/v#{version}/bulle_#{version}_linux_amd64.tar.gz"
+      url "https://github.com/FacileStudio/Bulle/releases/download/v#{version}/bulle_#{version}_linux_amd64.tar.gz"
     end
   end
 
   name "bulle"
   desc "Terminal coding agent — the human harness for the bulle SDK"
-  homepage "https://github.com/FacileStudio/bulle"
+  homepage "https://github.com/FacileStudio/Bulle"
 
   livecheck do
     skip "Auto-generated on release."
