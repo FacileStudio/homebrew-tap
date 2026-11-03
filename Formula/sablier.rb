@@ -1,25 +1,25 @@
 class Sablier < Formula
   desc "Terminal client for Sablier time tracking"
   homepage "https://github.com/FacileStudio/sablier-cli"
-  version "0.4.2"
+  version "0.5.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/FacileStudio/sablier-cli/releases/download/v0.4.2/sablier_0.4.2_darwin_arm64.tar.gz"
-      sha256 "fa70cc944854d902432717182dbd65473ca4fa9bb31162968ac9988f28b56c14"
+      url "https://github.com/FacileStudio/sablier-cli/releases/download/v0.5.0/sablier_0.5.0_darwin_arm64.tar.gz"
+      sha256 "5d092197376425f5f2a577de5beebfb425d635e3739c99a5382944232bb49f2c"
     else
-      url "https://github.com/FacileStudio/sablier-cli/releases/download/v0.4.2/sablier_0.4.2_darwin_amd64.tar.gz"
-      sha256 "556ccd1c1a0d225bc0c800b4d49cb805dd8e4f1da85ae6c88eeccdf5cab89271"
+      url "https://github.com/FacileStudio/sablier-cli/releases/download/v0.5.0/sablier_0.5.0_darwin_amd64.tar.gz"
+      sha256 "b1f6d6c181a9d6683c0b74fb6e0a4a5a714cfe791447bba1f94bc0c550113cbc"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/FacileStudio/sablier-cli/releases/download/v0.4.2/sablier_0.4.2_linux_amd64.tar.gz"
-      sha256 "2a472e53ff51543a38597921838e6c8bab3c41fb0db22890c4fc3ceb53427d0b"
+      url "https://github.com/FacileStudio/sablier-cli/releases/download/v0.5.0/sablier_0.5.0_linux_amd64.tar.gz"
+      sha256 "0e33fb94532e0aa07fbd63e22818bd7bea41419cbf7568423e47dac1770169df"
     else
-      url "https://github.com/FacileStudio/sablier-cli/releases/download/v0.4.2/sablier_0.4.2_linux_arm64.tar.gz"
-      sha256 "b3dbae80b8e63c002cbc40c1240a778dd9b5d80556c2c20d94bc08fdb7117147"
+      url "https://github.com/FacileStudio/sablier-cli/releases/download/v0.5.0/sablier_0.5.0_linux_arm64.tar.gz"
+      sha256 "fecceb197e1f0804636ceac3eab559cb8e3546c33976265148136a207ec5cfba"
     end
   end
 
