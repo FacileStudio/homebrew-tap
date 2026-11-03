@@ -1,25 +1,25 @@
 class Opus < Formula
   desc "Keyboard-driven terminal client for Opus project management"
   homepage "https://github.com/FacileStudio/opus-cli"
-  version "0.8.0"
+  version "0.9.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/FacileStudio/opus-cli/releases/download/v0.8.0/opus_0.8.0_darwin_arm64.tar.gz"
-      sha256 "ea7f6fc0aa15dc68bd24a2e6cd0e67a3219cbcd4200a2fd77210df0955b0eb64"
+      url "https://github.com/FacileStudio/opus-cli/releases/download/v0.9.0/opus_0.9.0_darwin_arm64.tar.gz"
+      sha256 "38bea03b9f8649a26a4fd5d6e618e521fe0417117f2586034289449c476820f5"
     else
-      url "https://github.com/FacileStudio/opus-cli/releases/download/v0.8.0/opus_0.8.0_darwin_amd64.tar.gz"
-      sha256 "e1e06eaa6491c136774bfabd29fa1bb7233226788bb5c9372b8cadc58eadf2a0"
+      url "https://github.com/FacileStudio/opus-cli/releases/download/v0.9.0/opus_0.9.0_darwin_amd64.tar.gz"
+      sha256 "9646180718ddf87b7fa4b57ef13a59884f905031c86ec57fe8cb3f867b22737d"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/FacileStudio/opus-cli/releases/download/v0.8.0/opus_0.8.0_linux_amd64.tar.gz"
-      sha256 "008300ecc56fa5a1442b6839c3a54c611f7e490b296a10ebaff1388a78e4030a"
+      url "https://github.com/FacileStudio/opus-cli/releases/download/v0.9.0/opus_0.9.0_linux_amd64.tar.gz"
+      sha256 "78f768ac73fa29c705d935fd897aaa9b0252e240baf951e4d033027fc4c8812a"
     else
-      url "https://github.com/FacileStudio/opus-cli/releases/download/v0.8.0/opus_0.8.0_linux_arm64.tar.gz"
-      sha256 "afdb1cb97ba3d18a315297781f74f6c6b1c5c89822cd75280ee584e212f8b03e"
+      url "https://github.com/FacileStudio/opus-cli/releases/download/v0.9.0/opus_0.9.0_linux_arm64.tar.gz"
+      sha256 "aa63dd9d1b233ceeaccf9ac9e77187e8f82a7be6a7ebd0d76126631311b13ba2"
     end
   end
 
