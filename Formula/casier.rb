@@ -1,21 +1,21 @@
 class Casier < Formula
   desc "Terminal client for Casier, the self-hosted secrets manager"
   homepage "https://github.com/FacileStudio/casier-cli"
-  version "0.4.2"
+  version "0.4.3"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/FacileStudio/casier-cli/releases/download/v0.4.2/casier_0.4.2_darwin_arm64.tar.gz"
-      sha256 "720620383750349df60d5d9c0d231608c1957cd149ced0dfba8dba39d3052e7d"
+      url "https://github.com/FacileStudio/casier-cli/releases/download/v0.4.3/casier_0.4.3_darwin_arm64.tar.gz"
+      sha256 "8e8d0ec963d110088a7174169f6f530f4c81245504a432d85e1142c4129ef8b5"
     else
-      url "https://github.com/FacileStudio/casier-cli/releases/download/v0.4.2/casier_0.4.2_darwin_amd64.tar.gz"
-      sha256 "57949b6139cc2680d19426841e7881197f79572d162ac36768df48c5eaaecf64"
+      url "https://github.com/FacileStudio/casier-cli/releases/download/v0.4.3/casier_0.4.3_darwin_amd64.tar.gz"
+      sha256 "6c756a27c43ef1916f9485d4296255ed1b60ab6d9a8de373c49bad0d238320de"
     end
   end
 
   on_linux do
-    url "https://github.com/FacileStudio/casier-cli/releases/download/v0.4.2/casier_0.4.2_linux_amd64.tar.gz"
-    sha256 "55f30d70e9f0d2e9e4ebdeb27650813dd2a2545891da5fd69714ae905f05424a"
+    url "https://github.com/FacileStudio/casier-cli/releases/download/v0.4.3/casier_0.4.3_linux_amd64.tar.gz"
+    sha256 "deca8f7f624b9404e6a844179a6168427c6a3adb3551af39f5204bed6274d0dc"
   end
 
   def install
